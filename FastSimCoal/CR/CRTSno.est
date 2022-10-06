@@ -1,0 +1,14 @@
+// Priors and rules file
+// *********************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max
+//all N are in number of haploid individuals
+1  NTH       logunif     100  1000000   output
+1  NSG       logunif     100  1000000   output
+0  RESIZE    logunif     0.01  100      output
+1  TDIV        logunif     100   100000   output
+
+[RULES]
+
+[COMPLEX PARAMETERS]

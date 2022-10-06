@@ -1,0 +1,20 @@
+// Priors and rules file
+// *********************
+
+[PARAMETERS]
+//#isInt? #name   #dist.#min  #max
+//all N are in number of haploid individuals
+1  NTK       logunif     100  1000000   output
+1  NTH       logunif     100  1000000   output
+0  RESIZE    logunif     0.01  100      output
+0  MIG21       logunif  0.0001 0.5       output
+0  MIG12       logunif  0.0001 0.5       output
+0  MIG34       logunif  0.0001 0.5       output
+0  MIG43       logunif  0.0001 0.5       output
+1  TDIV        unif     100   100000   output
+0  TPROP      unif     0.0001   0.5   output
+
+[RULES]
+
+[COMPLEX PARAMETERS]
+1  CHANGM = TDIV * TPROP		 output
