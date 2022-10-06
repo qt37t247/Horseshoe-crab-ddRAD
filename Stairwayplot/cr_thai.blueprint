@@ -1,0 +1,25 @@
+#CR blueprint file
+#input setting
+popid: thai # id of the population (no white space)
+nseq: 72 # number of sequences
+L: 412463145 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 	4352806.215	1807571.389	1108576.023	827773.0247	614533.769	497845.1703	428437.3429	343378.1243	298263.5463	274303.8493	252627.5365	229384.4246	201288.974	194308.6528	168894.7949	165149.5425	158806.5445	144592.2677	131032.5359	137523.9039	135608.5729	110178.7634	124113.7624	113875.8255	110399.6098	199885.2658	124166.8792	112351.8271	111062.352	111407.5734	88425.27257	115853.5646	99908.44485	97448.60394	113391.2278	77888.2307 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+#smallest_size_of_SFS_bin_used_for_estimation: 1 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 24 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 18	35	53	70 # number of random break points for each try (separated by white space)
+project_dir: two-epoch_fold # project directory
+stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
+ninput: 200 # number of input files to be created for each estimation
+#random_seed: 6
+#output setting
+mu: 1.918e-8 # assumed mutation rate per site per generation
+year_per_generation: 14 # assumed generation time (in years)
+#plot setting
+plot_title: cr_thai # title of the plot
+xrange: 0.1,10000 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size

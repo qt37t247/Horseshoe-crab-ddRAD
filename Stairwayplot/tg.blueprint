@@ -1,0 +1,25 @@
+#TG blueprint file
+#input setting
+popid: full # id of the population (no white space)
+nseq: 148 # number of sequences
+L: 663932669 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 	12892481.3	4527229.886	2616068.812	1741858.79	1307499.934	1038171.806	859901.2475	803623.764	509370.4796	619427.095	503902.3244	445948.2713	420993.852	393977.8677	355166.2502	324691.0854	314321.2444	297789.4149	279944.5428	251400.3117	258808.7611	249467.4921	228250.1996	227205.7257	226164.6304	215090.3981	203812.2036	178582.1907	183273.1942	180421.5633	177917.6843	151459.5206	171130.3371	186266.7937	173828.4701	178907.7197	176193.1384	54232.82518	115835.9168	204557.7179	161245.6942	110124.6457	137190.5253	144646.6315	127913.1659	109697.2182	125531.0161	115718.6888	129251.9635	114708.4463	120359.4236	115664.0064	136223.5397	112177.376	112299.581	104808.709	117260.4193	107198.6674	115942.3156	119509.2302	94263.22633	115241.1478	108566.0587	88933.33641	107230.879	99756.9235	128108.8503	101633.5843	116678.5806	103192.024	105473.8423	102510.8821	108048.3533	72728.7525 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+#smallest_size_of_SFS_bin_used_for_estimation: 1 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 24 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 18	36	54	72 # number of random break points for each try (separated by white space)
+project_dir: two-epoch_fold # project directory
+stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
+ninput: 200 # number of input files to be created for each estimation
+#random_seed: 6
+#output setting
+mu: 1.918e-8 # assumed mutation rate per site per generation
+year_per_generation: 14 # assumed generation time (in years)
+#plot setting
+plot_title: tg_full # title of the plot
+xrange: 0.1,10000 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size

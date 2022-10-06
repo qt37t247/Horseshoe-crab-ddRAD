@@ -1,0 +1,14 @@
+###Index reference genome
+./samtools faidx REFERENCE.fasta
+
+###Calculate sample allele frequency
+./angsd/angsd -bam POPNAME.filelist -anc REFERENCE.fasta -out POPNAME -doSaf 1 -gl 1 -P 8 -minMapQ 30 -minQ 20
+
+###Calculate folded-SFS for StairwayPlot2
+./angsd/misc/realSFS POPNAME.saf.idx -maxIter 100 -P 8 -fold 1 > POPNAME.sfs
+
+###Calculate 2D folded-SFS for FastSimCoal2
+./angsd/misc/realSFS POPNAME.saf.idx POPNAME2.saf.idx -maxIter 100 -P 8 -fold 1 > POPNAME_POPNAME2.sfs
+
+
+

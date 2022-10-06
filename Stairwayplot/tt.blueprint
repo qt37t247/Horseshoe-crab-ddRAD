@@ -1,0 +1,25 @@
+#TT blueprint file
+#input setting
+popid: all # id of the population (no white space)
+nseq: 124 # number of sequences
+L: 526427231.8 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 	7142732.984	2561596.433	1434524.645	1000395.855	710924.7518	640571.8545	424291.3605	568324.1325	214577.3117	357459.4874	396714.5917	241280.9718	242044.1487	265142.258	212544.6878	221205.8934	190900.8117	200262.1026	206034.4938	160520.0072	152661.8904	154542.1985	145095.9104	143797.7715	149279.172	158292.0417	144236.0936	134904.2315	119232.9418	109951.207	109212.5692	110253.6492	111293.5841	110262.987	96861.94257	101036.284	94184.0518	89310.29213	97027.69349	96275.66009	92094.10535	82713.75119	74346.865	88361.66411	149111.5807	73794.22942	47134.10114	45279.28029	114642.2377	85976.57016	104993.4641	76380.43274	67223.69887	79106.75478	61854.29569	78093.55518	61228.25485	85362.78334	61603.95154	63448.02299	106508.3731	45963.76056 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+#smallest_size_of_SFS_bin_used_for_estimation: 1 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 24 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 31	61	92	122 # number of random break points for each try (separated by white space)
+project_dir: two-epoch_fold # project directory
+stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
+ninput: 200 # number of input files to be created for each estimation
+#random_seed: 6
+#output setting
+mu: 1.918e-8 # assumed mutation rate per site per generation
+year_per_generation: 14 # assumed generation time (in years)
+#plot setting
+plot_title: all # title of the plot
+xrange: 0.1,10000 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size

@@ -1,0 +1,25 @@
+#CR blueprint file
+#input setting
+popid: singapore # id of the population (no white space)
+nseq: 36 # number of sequences
+L: 346920155 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 	3463290.906	1484777.98	869247.123	598789.0225	454836.1107	362066.5341	297036.2786	338296.7177	237688.7843	215950.4706	200909.6398	193737.1559	182475.9142	186154.2402	172042.624	177726.6604	169566.852	117140.1244 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+#smallest_size_of_SFS_bin_used_for_estimation: 1 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 24 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 9	17	26	34 # number of random break points for each try (separated by white space)
+project_dir: two-epoch_fold # project directory
+stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
+ninput: 200 # number of input files to be created for each estimation
+#random_seed: 6
+#output setting
+mu: 1.918e-8 # assumed mutation rate per site per generation
+year_per_generation: 14 # assumed generation time (in years)
+#plot setting
+plot_title: cr_singapore # title of the plot
+xrange: 0.1,10000 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size

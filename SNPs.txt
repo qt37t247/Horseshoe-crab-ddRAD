@@ -1,0 +1,36 @@
+###################STACKS SNP calling##################################################################
+ref_map.pl -T 8 --samples DIRECTORYTOSORTEDBAMFILES --popmap ./SPECIES_popmap.txt -o OUTDIR -X "populations: --plink"
+
+###################PLINK for quality filters###########################################################
+##NOTE: use --recode flexibly for different output 
+####("--recode " to create .ped file for next step; 
+#####"--reocde vcf" to create .vcf file for R-based analyses; 
+#####"--recode12" to create .ped file for ADMIXTURE; 
+#####"--recode A" to create .raw file for R-based DAPC analysis)
+
+##DATASET with 10% missingness (DATA1)
+plink --file STACKSOUTPUT --allow-extra-chr --geno 0.1 --out DATA1 --recode
+
+##DATASET with 10% missingness, linked loci filtered (DATA1L)
+plink --file DATA1 --allow-extra-chr --allow-no-sex --indep-pairwise 25 10 0.95
+plink --file DATA1 --extract plink.prune.in --allow-extra-chr --out DATA1L --recode
+
+##DATASET with 10% missingness, loci with minimum allele frequency < 0.05 filtered (DATA15)
+plink --file DATA1 --maf 0.05 --allow-extra-chr --out DATA15 --recode
+
+##DATASET with 10% missingness, linked loci filtered, loci with minimum allele frequency < 0.05 filtered (DATA1L5)
+plink --file DATA1L --maf 0.05 --allow-extra-chr --out DATA1L5 --recode
+
+##DATASET with 0% missingness (DATA0)
+plink --file STACKOUTPUT --allow-extra-chr --geno 0 --out DATA0 --recode
+
+##DATASET with 0% missingness, linked loci filtered (DATA0L)
+plink --file DATA0 --allow-extra-chr --allow-no-sex --indep-pairwise 25 10 0.95
+plink --file DATA0 --extract plink.prune.in --allow-extra-chr --out DATA0L --recode
+
+##DATASET with 0% missingness, loci with minimum allele frequency < 0.05 filtered (DATA05)
+plink --file DATA0 --maf 0.05 --allow-extra-chr --out DATA05 --recode
+
+##DATASET with 0% missingness, linked loci filtered, loci with minimum allele frequency < 0.05 filtered (DATA0L5)
+plink --file DATA0L --maf 0.05 --allow-extra-chr --out DATA0L5 --recode
+

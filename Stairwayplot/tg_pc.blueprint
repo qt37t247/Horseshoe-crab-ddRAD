@@ -1,0 +1,25 @@
+#TG blueprint file
+#input setting
+popid: pacific # id of the population (no white space)
+nseq: 128 # number of sequences
+L: 617141103 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 	10484565.14	3624041.633	2020417.488	1377502.861	1032340.01	830612.9957	730077.0282	556336.0643	536927.0656	472481.4019	411041.2025	397475.0637	345151.1074	327290.9048	315869.2149	305528.1837	242268.2733	266913.07	267679.3782	232719.8758	219975.5636	235660.9967	193616.6789	199174.9979	192147.6854	194300.8833	148072.6808	185513.1054	146564.2358	160108.5172	167717.4162	169509.4192	166079.4288	153168.6711	125797.292	131591.3106	140564.0774	145223.2681	131655.5574	118145.5979	141896.8747	105452.832	131435.1017	121355.2825	126163.1697	106214.5018	138673.7492	103971.0859	117175.5675	125787.8518	114478.8436	124894.5923	79293.81414	111370.0731	120307.9745	118856.0704	96301.26059	126560.0397	108265.0945	101557.5294	112635.7665	103116.7857	107778.2768	75727.66277 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+#smallest_size_of_SFS_bin_used_for_estimation: 1 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 24 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 32	63	95	126 # number of random break points for each try (separated by white space)
+project_dir: two-epoch_fold # project directory
+stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
+ninput: 200 # number of input files to be created for each estimation
+#random_seed: 6
+#output setting
+mu: 1.918e-8 # assumed mutation rate per site per generation
+year_per_generation: 14 # assumed generation time (in years)
+#plot setting
+plot_title: tg_pacific # title of the plot
+xrange: 0.1,10000 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size

@@ -1,0 +1,25 @@
+#CR blueprint file
+#input setting
+popid: abcde # id of the population (no white space)
+nseq: 220 # number of sequences
+L: 820766274 # total number of observed nucleic sites, including polymorphic and monomorphic
+whether_folded: true # whethr the SFS is folded (true or false)
+SFS: 	27446962.38	7861129.565	3891368.014	2466997.576	1744985.512	1338548.812	1077112.831	909749.8336	784317.5786	690258.1131	615313.0431	560001.4532	507098.7576	459690.8012	418025.2905	399696.6526	373616.2671	352576.1951	340223.4291	316137.3757	299992.1326	283003.4239	270979.1095	259082.7951	252884.7845	250116.3725	236214.8994	229400.7395	214255.918	208811.8538	197384.0846	192577.953	187056.7005	182881.2866	182373.7429	170603.9559	164213.6327	160465.9383	156386.8904	149172.7823	149180.9266	147852.9079	144966.0666	139788.8515	142027.4692	139988.2798	133654.2727	130930.8755	132626.3186	139646.6507	137498.8892	133347.5378	136283.3448	129240.114	130715.6646	122627.9119	127846.8337	128909.4116	130739.8393	162694.7917	132307.8192	120135.0979	111168.4095	110079.4883	104392.2531	99248.53737	101348.3389	95599.89861	92935.14333	92017.26855	90211.46388	88904.30972	87575.28468	84423.31006	85221.13888	87377.59268	87747.75193	88282.40549	89110.23556	85982.21288	86012.4172	82778.45851	79306.28773	78913.87764	81002.6095	78746.87395	78593.49383	77922.1652	79808.94962	78505.96306	76815.88861	76615.01233	77836.13237	78961.90648	77060.05052	78916.07924	75716.62405	79039.56402	77183.46593	79313.75486	77380.23186	75911.00422	77215.1282	76601.15279	74575.83283	74093.16291	74594.14552	76492.95893	77279.44273	45526.71904 # snp frequency spectrum: number of singleton, number of doubleton, etc. (separated by white space)
+#smallest_size_of_SFS_bin_used_for_estimation: 1 # default is 1; to ignore singletons, uncomment this line and change this number to 2
+#largest_size_of_SFS_bin_used_for_estimation: 24 # default is nseq/2 for folded SFS
+pct_training: 0.67 # percentage of sites for training
+nrand: 55	109	164	218 # number of random break points for each try (separated by white space)
+project_dir: two-epoch_fold # project directory
+stairway_plot_dir: stairway_plot_es # directory to the stairway plot files
+ninput: 200 # number of input files to be created for each estimation
+#random_seed: 6
+#output setting
+mu: 1.918e-8 # assumed mutation rate per site per generation
+year_per_generation: 14 # assumed generation time (in years)
+#plot setting
+plot_title: cr_abcde # title of the plot
+xrange: 0.1,10000 # Time (1k year) range; format: xmin,xmax; "0,0" for default
+yrange: 0,0 # Ne (1k individual) range; format: xmin,xmax; "0,0" for default
+xspacing: 2 # X axis spacing
+yspacing: 2 # Y axis spacing
+fontsize: 12 # Font size
