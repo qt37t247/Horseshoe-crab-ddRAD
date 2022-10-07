@@ -1,6 +1,6 @@
 # Scripts used for the ddRADSeq data of three horseshoe crab species
 
-Manuscript title: The Quaternary fate of horseshoe crabs – a living fossil – appears tightly linked to sea level  dynamics in Sundaland.
+Manuscript title: The Quaternary fate of horseshoe crabs â€“ a living fossil â€“ appears tightly linked to sea level  dynamics in Sundaland.
 
 Additional information:
 
@@ -46,7 +46,9 @@ PopGenome: https://cran.r-project.org/web/packages/PopGenome/index.html
 ## Step 3b. Reconstruction of demographical history
 
 Scripts for estimating effective population size over time (Folder "Stairwayplot")
+
 Stairway Plot2: https://github.com/xiaoming-liu/stairway-plot-v2
 
 Scripts for simulating demographical events (Folder "FastSimCoal")
+
 FastSimCoal2: http://cmpg.unibe.ch/software/fastsimcoal27/
