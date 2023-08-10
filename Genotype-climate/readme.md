@@ -13,9 +13,12 @@ The Tri-spine horseshoe crab, TT
 
 Allele frequency is calculated with PLINK v1.9 for individuals of each sampling site using "--keep" and "--freq"
 
-We then collect all the ".frq" files to generate a allele frequency table using the R script ("freq_cal.r") attached.
+We then collect all the ".frq" files to generate a allele frequency table using the R script ("freq_cal.R") attached.
 
 
+## Prepare environmental variable 
+
+We collect environment data from BIO-ORACLE and extract site variables using the R script ("geo_prep.R") attached.
 
 
 
