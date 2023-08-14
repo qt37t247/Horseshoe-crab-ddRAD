@@ -4,7 +4,7 @@ frqs <- do.call("cbind", lapply(files, function(fn){data.frame(Filename=fn, read
 write.csv(frqs, "raw_frequncy.csv")
 
 ## Retain allele frequency only, other information convert to row and column names
-frqx <- frqs[,(1:17)*7-1]
+frqx <- frqs[,(1:length(files)*7-1]
 colnames(frqx) <- files
 rownames(frqx) <- gsub(" ", "", paste(frqs$CHR, "_", frqs$SNP))
-write.csv(t(frqx), "TT.alfreq")
+write.csv(t(frqx), "*.alfreq")
