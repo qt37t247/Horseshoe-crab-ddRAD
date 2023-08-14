@@ -25,6 +25,13 @@ We collect environment data from BIO-ORACLE and extract site variables using the
 The output is "*_env.csv", which is to be used as input for gradientForest
 
 
+## Compute genotype-climate association with gradientForest 
+
+We calculate genotype-climate association with a modified R script ("*_Gradientforst.R") attached.
+
+R script can output important vairants, two pdf for PCA and transformed genotype-climate association across the distribution ranges.
+
+
 ## Reference 
 
 Chen, Y., Jiang, Z., Fan, P., Ericson, P. G., Song, G., Luo, X., ... & Qu, Y. (2022). The combination of genomic offset and niche modelling provides insights into climate change-driven vulnerability. Nature Communications, 13(1), 4821.
