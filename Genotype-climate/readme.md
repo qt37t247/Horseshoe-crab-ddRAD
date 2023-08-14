@@ -32,6 +32,12 @@ We calculate genotype-climate association with a modified R script ("*_Gradientf
 R script can output important vairants, two pdf for PCA and transformed genotype-climate association across the distribution ranges.
 
 
+## Ecological niche modelling with ENMwizard and biomod2
+
+
+## Landscape genetic analyses for the connectivity
+
+
 ## Reference 
 
 Chen, Y., Jiang, Z., Fan, P., Ericson, P. G., Song, G., Luo, X., ... & Qu, Y. (2022). The combination of genomic offset and niche modelling provides insights into climate change-driven vulnerability. Nature Communications, 13(1), 4821.
