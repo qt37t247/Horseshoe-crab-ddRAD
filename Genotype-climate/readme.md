@@ -27,7 +27,7 @@ The output is "*_env.csv", which is to be used as input for gradientForest
 
 ## Compute genotype-climate association with gradientForest 
 
-We calculate genotype-climate association with a modified R script ("*_Gradientforst.R") attached.
+We calculate genotype-climate association with a modified R script ("*_gradientforest.R") attached.
 
 R script can output important vairants, three pdf files for PCA, transformed genotype-climate association across the distribution ranges and the genomic offset.
 
