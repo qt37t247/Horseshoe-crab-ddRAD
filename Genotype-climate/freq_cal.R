@@ -7,4 +7,4 @@ write.csv(frqs, "raw_frequncy.csv")
 frqx <- frqs[,(1:length(files)*7-1]
 colnames(frqx) <- files
 rownames(frqx) <- gsub(" ", "", paste(frqs$CHR, "_", frqs$SNP))
-write.csv(t(frqx), "*.alfreq")
+write.csv(t(frqx), "*.alfreq") ## make it universal
