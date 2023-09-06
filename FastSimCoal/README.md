@@ -1,10 +1,10 @@
-#Scripts and input files for simulating demographical events of Asian horseshoe crabs
+# Scripts and input files for simulating demographical events of Asian horseshoe crabs
 
 Two horseshoe crab species detected significant population structure were tested: Carcinoscorpius rotundicauda (CR) and Tachypleus tridentatus (TT)
 
 The two folders contain input files for the two horseshoe crab species respectively.
 
-##Initial simulations of 50 runs
+## Initial simulations of 50 runs
 
 Each demographic model are provided the files necessary to run the parameters estimate with the command (for batch submission to HPC, please refer to "Initial_simulations_50.sh"):
 
@@ -18,7 +18,7 @@ After the simulations, perform "bestrun.sh" to extract the best run for each dem
 
 Run "AIC.R" to calculate AIC value for the bestrun of each demographic model. Compare the AIC values among models to determine the best model.
 
-##Parametric bootstrapping 
+## Parametric bootstrapping 
 
 Once the best demographic model is determined, modify the "xxx_maxL.par" in the subfolder "bestrun" of the folder of the best demographic model.
 
