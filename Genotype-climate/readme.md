@@ -32,7 +32,18 @@ We calculate genotype-climate association with a modified R script ("*_gradientf
 R script can output important vairants, three pdf files for PCA, transformed genotype-climate association across the distribution ranges and the genomic offset.
 
 
-## Ecological niche modelling with ENMwizard and biomod2
+## Ecological niche modelling with MaxEnt
+
+We modelled the niche suitability with MaxEnt v3.4.3 with 19 environmental variables. Output are .asc files. 
+
+Change of niche suitability is calculated, visualized and output as .asc file with the R script ("diff_plot.R") 
+
+
+## Calculation of genomic niche index (GNI)
+
+We collected all the csv files of genomic offset (results of "*_gradientforest.R") and changes of niche suitability (results of "diff_plot.R") in one folder (set as working directory). 
+
+Run the R script ("gni.R") to calculate, visualize and output GNI with multiple files of different formats (.csv, .asc and .pdf)  
 
 
 ## Landscape genetic analyses for the connectivity
