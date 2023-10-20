@@ -1,12 +1,14 @@
-# Analytical framework adopting Chen et al., 2022
+# Climate change-driven vulnerability 
+
+The analytical framework is published as Chen et al., 2022
 
 The analyses are for three Asian horseshoe crab species 
 
-The Mangrove horseshoe crab, CR
+The mangrove horseshoe crab, CR
 
-The Coastal horseshoe crab, TG
+The coastal horseshoe crab, TG
 
-The Tri-spine horseshoe crab, TT
+The trispine horseshoe crab, TT
 
 
 ## Prepare allele frequency 
@@ -48,6 +50,11 @@ Run the R script ("gni.R") to calculate, visualize and output GNI with multiple 
 
 ## Landscape genetic analyses for the connectivity
 
+We used R script DResD to compute individual-based spatial explicit resistance to dispersal. 
+
+Compute genetic and spatial distance matrices with the R script ("gdistance.R").
+
+Use the distance matrices to map the resistance using R script ("DResD_*.R")
 
 ## Reference 
 
