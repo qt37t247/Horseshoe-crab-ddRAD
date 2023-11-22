@@ -50,11 +50,7 @@ Run the R script ("gni.R") to calculate, visualize and output GNI with multiple 
 
 ## Landscape genetic analyses for the connectivity
 
-We used R script DResD to compute individual-based spatial explicit resistance to dispersal. 
-
-Compute genetic and spatial distance matrices with the R script ("gdistance.R").
-
-Use the distance matrices to map the resistance using R script ("DResD_*.R")
+We used R package resGF to compute resistance surfaces using gradient forest and allelic frequencies. See R script ("resDF_HSC.R"). 
 
 ## Reference 
 
