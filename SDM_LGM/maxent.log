@@ -1,0 +1,96 @@
+Tue Aug 03 08:51:45 SGT 2021
+MaxEnt version 3.4.4
+Checking header of C:\Users\dbstq\Desktop\Seed\SDM\now\Asp_EW.asc
+Checking header of C:\Users\dbstq\Desktop\Seed\SDM\now\Asp_NS.asc
+Checking header of C:\Users\dbstq\Desktop\Seed\SDM\now\Dist.asc
+Checking header of C:\Users\dbstq\Desktop\Seed\SDM\now\bath.asc
+Checking header of C:\Users\dbstq\Desktop\Seed\SDM\now\prc.asc
+Checking header of C:\Users\dbstq\Desktop\Seed\SDM\now\prs.asc
+Checking header of C:\Users\dbstq\Desktop\Seed\SDM\now\sal.asc
+Checking header of C:\Users\dbstq\Desktop\Seed\SDM\now\slp.asc
+Checking header of C:\Users\dbstq\Desktop\Seed\SDM\now\tmp.asc
+Checking header of C:\Users\dbstq\Desktop\Seed\SDM\now\tpa.asc
+Checking header of C:\Users\dbstq\Desktop\Seed\SDM\now\tpr.asc
+Reading samples from sampling_corrected.csv
+Read samples: max memory 259522560, total allocated 101457920, free 35403616, used 66054304, increment -20066984
+Extractor: max memory 259522560, total allocated 101457920, free 32919280, used 68538640, increment 2484336
+Extracting random background and sample data
+Warning: Sample at 88.70833333, 21.54166667 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 88.70833333, 21.54166667
+Warning: Sample at 87.20833333, 21.375 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 87.20833333, 21.375
+Warning: Sample at 87.20833333, 21.375 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 87.20833333, 21.375
+Warning: Sample at 87.20833333, 21.375 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 87.20833333, 21.375
+Warning: Sample at 87.20833333, 21.375 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 87.20833333, 21.375
+Warning: Sample at 87.20833333, 21.375 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 87.20833333, 21.375
+Warning: Sample at 87.125, 21.29166667 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 87.125, 21.29166667
+Warning: Sample at 84.95833333, 19.125 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 84.95833333, 19.125
+Warning: Sample at 106.875, 10.29166667 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 106.875, 10.29166667
+Warning: Sample at 101.125, 6.958333333 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 101.125, 6.958333333
+Warning: Sample at 101.125, 6.958333333 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 101.125, 6.958333333
+Warning: Sample at 102.7916667, 5.875 in sampling_corrected.csv is missing some environmental data (e.g. bath)
+Warning: Skipping sample at 102.7916667, 5.875
+Warning: Sample at 102.7916667, 5.875 in sampling_corrected.csv is missing some environmental data (e.g. bath)
+Warning: Skipping sample at 102.7916667, 5.875
+Warning: Sample at 117.7083333, -0.625 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 117.7083333, -0.625
+Warning: Sample at 105.9583333, -5.708333333 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 105.9583333, -5.708333333
+Warning: Sample at 112.875, -7.458333333 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 112.875, -7.458333333
+Warning: Sample at 112.9583333, -7.458333333 in sampling_corrected.csv is missing some environmental data (e.g. sal)
+Warning: Skipping sample at 112.9583333, -7.458333333
+471686 points with values for all grids
+Adding samples to background in feature space
+Command line used: 
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=C:\Users\dbstq\Desktop\Seed\SDM\Results\LGM projectionlayers=C:\Users\dbstq\Desktop\Seed\SDM\LGM samplesfile=C:\Users\dbstq\Desktop\Seed\SDM\sampling_corrected.csv environmentallayers=C:\Users\dbstq\Desktop\Seed\SDM\now randomseed randomtestpoints=25 betamultiplier=3.0
+Species: Tachypleus_gigas
+Layers: Asp_EW Asp_NS Dist bath prc prs sal slp tmp tpa tpr
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous
+outputdirectory: C:\Users\dbstq\Desktop\Seed\SDM\Results\LGM
+projectionlayers: C:\Users\dbstq\Desktop\Seed\SDM\LGM
+samplesfile: C:\Users\dbstq\Desktop\Seed\SDM\sampling_corrected.csv
+environmentallayers: C:\Users\dbstq\Desktop\Seed\SDM\now
+randomseed: true
+randomtestpoints: 25
+betamultiplier: 3.0
+
+getSamples: max memory 259522560, total allocated 101457920, free 23984680, used 77473240, increment 8934600
+Making features
+makeFeatures: max memory 259522560, total allocated 101457920, free 17397552, used 84060368, increment 6587128
+Tachypleus_gigas: 
+Regularization values: linear/quadratic/product: 0.216, categorical: 0.250, threshold: 1.580, hinge: 0.500
+42 samples
+Time since start: 1.005
+Density: max memory 259522560, total allocated 101457920, free 7375376, used 94082544, increment 10022176
+linearPredictor: max memory 259522560, total allocated 101457920, free 7295048, used 94162872, increment 80328
+FeaturedSpace: max memory 259522560, total allocated 101457920, free 7295048, used 94162872, increment 0
+Sequential: max memory 259522560, total allocated 101457920, free 7295048, used 94162872, increment 0
+Initial loss: 9.214232786691527
+Initial test loss: 9.214232786691527
+Time since start: 17.074
+500: time = 16.062000 loss = 5.320019 testLoss 4.966136
+Resulting gain: 3.8942133741946243
+Projecting...
+Writing file C:\Users\dbstq\Desktop\Seed\SDM\Results\LGM\Tachypleus_gigas.asc
+Time since start: 20.275
+Writing C:\Users\dbstq\Desktop\Seed\SDM\Results\LGM\plots\Tachypleus_gigas.png
+Projecting...
+Writing file C:\Users\dbstq\Desktop\Seed\SDM\Results\LGM\Tachypleus_gigas_LGM.asc
+Writing file C:\Users\dbstq\Desktop\Seed\SDM\Results\LGM\Tachypleus_gigas_LGM_clamping.asc
+Time since start: 23.758
+Writing C:\Users\dbstq\Desktop\Seed\SDM\Results\LGM\plots\Tachypleus_gigas_LGM.png
+Writing C:\Users\dbstq\Desktop\Seed\SDM\Results\LGM\plots\Tachypleus_gigas_LGM_clamping.png
+Writing file C:\Users\dbstq\Desktop\Seed\SDM\Results\LGM\Tachypleus_gigas_LGM_novel.asc
+Writing file C:\Users\dbstq\Desktop\Seed\SDM\Results\LGM\Tachypleus_gigas_LGM_novel_limiting.asc
+Time since start: 27.858
+Ending
