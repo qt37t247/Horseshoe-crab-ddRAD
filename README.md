@@ -2,6 +2,9 @@
 
 Manuscript title: The Quaternary fate of horseshoe crabs – a living fossil – appears tightly linked to sea level  dynamics in Sundaland.
 
+Please access the raw sequencing reads deposited in NCBI under BIOPROJECT PRJNA1127623
+
+
 Additional information:
 
 
