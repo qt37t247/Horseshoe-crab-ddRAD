@@ -1,11 +1,20 @@
-# Scripts used for the ddRADSeq data of three horseshoe crab species
+# Scripts used for the ddRADSeq data of three Asian horseshoe crab species
 
-Manuscript title: The Quaternary fate of horseshoe crabs – a living fossil – appears tightly linked to sea level  dynamics in Sundaland.
-
-Please access the raw sequencing reads deposited in NCBI under BIOPROJECT PRJNA1127623
+Manuscript title: Evolution and viability of Asian horseshoe crabs appear tightly linked to geo-climatic dynamics in Sunda Shelf.
 
 
-Additional information:
+## Data availability
+
+Sequencing reads are archived in NCBI under Bioproject PRJNA1127623. 
+
+To download the data, you may use the command below (may need to install relevant NCBI tools accordingly):
+
+```bash
+project='PRJNA1127623'
+esearch -db sra -query $project | efetch -format runinfo > runinfo.csv
+cat runinfo.csv | cut -d "," -f 1 > SRR.numbers
+sed '1d' SRR.numbers | parallel -j 12 fastq-dump --split-files --origfmt --gzip {}
+```
 
 
 ## Step 1. NGS reads alignment (Align.txt)
