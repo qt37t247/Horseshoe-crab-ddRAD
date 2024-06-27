@@ -61,8 +61,24 @@ PopGenome: https://cran.r-project.org/web/packages/PopGenome/index.html
 
 Scripts for estimating effective population size over time (Folder "Stairwayplot")
 
+Packages used: 
+
 Stairway Plot2: https://github.com/xiaoming-liu/stairway-plot-v2
+
 
 Scripts for simulating demographical events (Folder "FastSimCoal")
 
+Packages used: 
+
 FastSimCoal2: http://cmpg.unibe.ch/software/fastsimcoal27/
+
+
+## Step 3c. Genotype-environment association and viability prediction
+
+Scripts for estimating genome niche index and resistance to dispersal (Folder "Genotype-climate")
+
+Packages used: 
+
+gradientForest (R package): https://rdrr.io/rforge/gradientForest/
+
+resGF (R package): https://github.com/MVan35/resGF/ 
