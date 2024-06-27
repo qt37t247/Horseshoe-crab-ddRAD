@@ -1,5 +1,7 @@
 # Scripts used for the ddRADSeq data of three Asian horseshoe crab species
 
+In this project, we collected over 250 horseshoe crabs from 10 counties around Asia. We produced first comprehesive population genetic structure for the Asian horseshoe crab populations, reconstructed the evolutionary history, and projected their viability under impending anthropogenic climate change scenarios.
+
 Manuscript title: Evolution and viability of Asian horseshoe crabs appear tightly linked to geo-climatic dynamics in Sunda Shelf.
 
 
